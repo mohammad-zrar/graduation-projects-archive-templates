@@ -117,13 +117,81 @@
    </aside><!-- End Sidebar-->
 
    <main id="main" class="main">
-      <h1>Hello world</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam dolorem qui nulla unde adipisci! Sequi eligendi laboriosam minima. Minus accusamus consectetur rem cumque dolorem.</p>
+      <div class="card-body">
+         <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+            <div class="dataTable-top">
+      
+               <div class="dataTable-search">
+                  <div class="input-group input-group-lg">
+                     <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg" placeholder="Search">
+                     <button type="button" class="btn btn-outline-dark input-group-text">Filter</button>
+
+                  </div>
+               </div>
+            </div>
+            <div class="dataTable-container">
+               <table class="table datatable dataTable-table">
+                  <thead>
+                     <tr>
+                        <th scope="col" data-sortable="" style="width: 5.68336%;"><a href="#"
+                              class="dataTable-sorter">#</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">Project Name</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">Students</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">Superviser</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">College</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">Department</a>
+                        </th>
+                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
+                              class="dataTable-sorter">Actions</a>
+                        </th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">1</th>
+                        <td>Smart Medical System</td>
+                        <td>Empty</td>
+                        <td>Dr. Ali Ahmad</td>
+                        <td>College of Science</td>
+                        <td>Computer Science</td>
+                        <td>
+                           <button type="button" class="btn btn-success btn-sm">More info</button>
+                           <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                           <button type="button" class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="dataTable-bottom">
+               <div class="dataTable-dropdown"><label>
+                     Showing
+                     <select class="dataTable-selector">
+                        <option value="5">9</option>
+                        <option value="10" selected="">10</option>
+                        <option value="15">11</option>
+                        <option value="20">12</option>
+                        <option value="25">13</option>
+                     </select> of 128</label>
+               </div>
+               <nav class="dataTable-pagination">
+                  <ul class="dataTable-pagination-list"></ul>
+               </nav>
+            </div>
+         </div>
+      </div>
    </main>
-
-
-
-
 
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
