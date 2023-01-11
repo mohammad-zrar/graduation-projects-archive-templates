@@ -37,19 +37,14 @@
    <header id="header" class="header fixed-top d-flex align-items-center">
 
       <div class="d-flex align-items-center justify-content-between">
-         <a href="index.html" class="logo d-flex align-items-center">
-            <img src="images/slahaddin-logo.png" alt="">
-            <span class="d-none d-lg-block">Salahadin Universty</span>
-         </a>
          <i class="bi bi-list toggle-sidebar-btn"></i>
+         <a href="index.html" class="logo d-flex align-items-center ms-3 w-100">
+            <img src="images/slahaddin-logo.png" alt="">
+            <span class="d-none d-lg-block">Salahadin Universty Erbil (SUE)</span>
+         </a>
+         
       </div><!-- End Logo -->
 
-      <div class="search-bar">
-         <form class="search-form d-flex align-items-center" method="POST" action="#">
-            <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-         </form>
-      </div><!-- End Search Bar -->
 
       <nav class="header-nav ms-auto">
          <ul class="d-flex align-items-center">
@@ -105,11 +100,11 @@
          </li><!-- End Dashboard Nav -->
 
          <li class="nav-item">
-            <a class="nav-link " href="admins.html">
-               <i class="bi bi-people-fill"></i>
+            <a class="nav-link collapsed" href="admins.html">
+               <i class="bi bi-person"></i>
                <span>All Admins</span>
             </a>
-         </li><!-- End Dashboard Nav -->
+         </li>
 
 
       </ul>
@@ -120,7 +115,8 @@
       <div class="card-body">
          <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
             <div class="dataTable-top">
-      
+               <button type="submit" class="btn btn-primary">Upload project</button>
+
                <div class="dataTable-search">
                   <div class="input-group input-group-lg">
                      <input type="text" class="form-control" aria-label="Sizing example input"
@@ -131,6 +127,7 @@
                </div>
             </div>
             <div class="dataTable-container">
+               
                <table class="table datatable dataTable-table">
                   <thead>
                      <tr>
@@ -159,7 +156,7 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">01</th>
                         <td>Smart Medical System</td>
                         <td>Empty</td>
                         <td>Dr. Ali Ahmad</td>
