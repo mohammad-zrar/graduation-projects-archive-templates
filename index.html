@@ -28,7 +28,8 @@
    <!-- Template Main CSS File -->
    <link href="assets/css/style.css" rel="stylesheet">
 
-
+   <!-- My CSS -->
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -48,12 +49,6 @@
 
       <nav class="header-nav ms-auto">
          <ul class="d-flex align-items-center">
-
-            <li class="nav-item d-block d-lg-none">
-               <a class="nav-link nav-icon search-bar-toggle " href="#">
-                  <i class="bi bi-search"></i>
-               </a>
-            </li><!-- End Search Icon-->
 
 
             <li class="nav-item dropdown pe-3">
@@ -88,7 +83,7 @@
    </header><!-- End Header -->
 
    <!-- ======= Sidebar ======= -->
-   <aside id="sidebar" class="sidebar">
+   <aside id="sidebar" class="sidebar ">
 
       <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -162,10 +157,18 @@
                         <td>Dr. Ali Ahmad</td>
                         <td>College of Science</td>
                         <td>Computer Science</td>
-                        <td>
-                           <button type="button" class="btn btn-success btn-sm">More info</button>
-                           <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-                           <button type="button" class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                        <td class="text-lg-end text-md-center">
+                           <button type="button" class="btn btn-success btn-sm text-light">
+                              More info
+                           </button>
+
+                           <button type="button" class="btn btn-danger btn-sm text-light">
+                              <i class="bi bi-trash"></i>
+                           </button>
+
+                           <button type="button" class="btn btn-warning btn-sm text-light">
+                              <i class="bi bi-pencil"></i>
+                           </button>
                         </td>
                      </tr>
                   </tbody>

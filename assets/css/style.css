@@ -376,13 +376,14 @@ h6 {
 
 @media (min-width: 1200px) {
   .logo {
-    width: 280px;
+    width: 240px;
   }
 }
 
 .logo img {
-  max-height: 26px;
-  margin-right: 6px;
+  max-height: 40px;
+  margin-right: 10px;
+  padding-left: 15px;
 }
 
 .logo span {
@@ -404,7 +405,7 @@ h6 {
 }
 
 .header .toggle-sidebar-btn {
-  font-size: 32px;
+  font-size: 40px;
   padding-left: 10px;
   cursor: pointer;
   color: #012970;
@@ -618,7 +619,7 @@ h6 {
   top: 60px;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 250px;
   z-index: 996;
   transition: all 0.3s;
   padding: 20px;
