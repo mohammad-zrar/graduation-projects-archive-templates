@@ -29,7 +29,7 @@
    <link href="assets/css/style.css" rel="stylesheet">
 
    <!-- My CSS -->
-   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="my/styles.css">
 </head>
 
 <body>
@@ -107,11 +107,27 @@
    </aside><!-- End Sidebar-->
 
    <main id="main" class="main">
-      <div class="card-body">
+      <div class="pagetitle">
+         <div class="pagetitle">
+            <h1>Data Tables</h1>
+            <nav>
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item">Tables</li>
+                  <li class="breadcrumb-item active">Data</li>
+               </ol>
+            </nav>
+         </div>
+      </div>
+      <div class="card-body ">
          <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
-            <div class="dataTable-top ">
+            <!-- Search and the button before the table content -->
+            <div class="dataTable-top my-3">
                <div class="d-flex">
-                  <button type="submit" class="btn btn-primary mx-3">Upload project</button>
+                  <button type="submit" class="btn btn-primary mx-3 d-none d-md-block">Upload project</button>
+                  <button type="submit" class="btn btn-primary mx-3 d-block d-md-none">
+                     <i class="bi bi-plus-square"></i>
+                  </button>
 
                   <div class="dataTable-search">
                      <div class="input-group input-group-lg">
@@ -124,115 +140,124 @@
                </div>
 
             </div>
-            <div class="dataTable-container">
 
-               <table class="table datatable dataTable-table">
-                  <thead>
-                     <tr>
-                        <th scope="col" data-sortable="" style="width: 5.68336%;"><a href="#"
-                              class="dataTable-sorter">#</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">Project Name</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">Students</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">Superviser</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">College</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">Department</a>
-                        </th>
-                        <th scope="col" data-sortable="" style="width: auto;"><a href="#"
-                              class="dataTable-sorter">Actions</a>
-                        </th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">01</th>
-                        <td>Smart Medical System</td>
-                        <td>Empty</td>
-                        <td>Dr. Ali Ahmad</td>
-                        <td>College of Science</td>
-                        <td>Computer Science</td>
-                        <td class="text-start d-flex ">
+            <div class="dataTable-container overflow-auto">
+               <div class="table-responsive" style="white-space: nowrap;">
+                  <table class="table datatable dataTable-table table-hover">
+                     <thead>
+                        <tr>
+                           <!-- 5.68336% -->
+                           <th scope="col" data-sortable="" style="width: 5.68336%;"><a href="#"
+                                 class="dataTable-sorter">#</a>
+                           </th>
+                           <th scope="col" data-sortable="" ><a href="#"
+                                 class="dataTable-sorter">Project Name</a>
+                           </th>
+                           <th scope="col" data-sortable="" ><a href="#"
+                                 class="dataTable-sorter">Students</a>
+                           </th>
+                           <th scope="col" data-sortable="" ><a href="#"
+                                 class="dataTable-sorter">Superviser</a>
+                           </th>
+                           <th scope="col" data-sortable="" ><a href="#"
+                                 class="dataTable-sorter">College</a>
+                           </th>
+                           <th scope="col" data-sortable="" ><a href="#"
+                                 class="dataTable-sorter">Department</a>
+                           </th>
+                           <th scope="col" data-sortable=""><a href="#"
+                                 class="dataTable-sorter">Actions</a>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">01</th>
+                           <td>Smart Medical System</td>
+                           <td class="input-group">
+                              
+                                 <span class="rounded-circle border text-center bg-primary text-light p-1">MZ</span>
+                                 <span class="rounded-circle border text-center bg-primary text-light p-1">MA</span>
+                                 <span class="rounded-circle border text-center bg-primary text-light p-1">+1</span>
+                              
+                           </td>
+                           <td>Dr. Ali Ahmad</td>
+                           <td>College of Science</td>
+                           <td>Computer Science</td>
+                           <td class="text-start d-flex ">
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
-                              <i class="bi bi-info-circle"></i>
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                                 <i class="bi bi-info-circle"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
-                              more info
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                                 more info
+                              </button>
 
-                           <button type="button" class="btn btn-danger btn-sm text-light mx-1">
-                              <i class="bi bi-trash"></i>
-                           </button>
+                              <button type="button" class="btn btn-danger btn-sm text-light mx-1">
+                                 <i class="bi bi-trash"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-warning btn-sm text-light mx-1">
-                              <i class="bi bi-pencil"></i>
-                           </button>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">02</th>
-                        <td>Project Graduations Archieve</td>
-                        <td>Empty</td>
-                        <td>M. Sajaa</td>
-                        <td>College of Science</td>
-                        <td>Computer Science</td>
-                        <td class="text-start d-flex ">
+                              <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                                 <i class="bi bi-pencil"></i>
+                              </button>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">02</th>
+                           <td>Project Graduations Archieve</td>
+                           <td>Empty</td>
+                           <td>M. Sajaa</td>
+                           <td>College of Science</td>
+                           <td>Computer Science</td>
+                           <td class="text-start d-flex ">
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
-                              <i class="bi bi-info-circle"></i>
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                                 <i class="bi bi-info-circle"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
-                              more info
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                                 more info
+                              </button>
 
-                           <button type="button" class="btn btn-danger btn-sm text-light mx-1">
-                              <i class="bi bi-trash"></i>
-                           </button>
+                              <button type="button" class="btn btn-danger btn-sm text-light mx-1">
+                                 <i class="bi bi-trash"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-warning btn-sm text-light mx-1">
-                              <i class="bi bi-pencil"></i>
-                           </button>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">03</th>
-                        <td>Data Structer Tutor</td>
-                        <td>Empty</td>
-                        <td>M. Safeen</td>
-                        <td>College of engineering</td>
-                        <td>Software engineering</td>
-                        <td class="text-start d-flex ">
+                              <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                                 <i class="bi bi-pencil"></i>
+                              </button>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">03</th>
+                           <td>Data Structer Tutor</td>
+                           <td>Empty</td>
+                           <td>M. Safeen</td>
+                           <td>College of engineering</td>
+                           <td>Software engineering</td>
+                           <td class="text-start d-flex ">
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
-                              <i class="bi bi-info-circle"></i>
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                                 <i class="bi bi-info-circle"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
-                              more info
-                           </button>
+                              <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                                 more info
+                              </button>
 
-                           <button type="button" class="btn btn-danger btn-sm text-light mx-1">
-                              <i class="bi bi-trash"></i>
-                           </button>
+                              <button type="button" class="btn btn-danger btn-sm text-light mx-1">
+                                 <i class="bi bi-trash"></i>
+                              </button>
 
-                           <button type="button" class="btn btn-warning btn-sm text-light mx-1">
-                              <i class="bi bi-pencil"></i>
-                           </button>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+                              <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                                 <i class="bi bi-pencil"></i>
+                              </button>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
             <div class="dataTable-bottom">
                <div class="dataTable-dropdown"><label>
@@ -269,6 +294,9 @@
 
    <!-- Template Main JS File -->
    <script src="assets/js/main.js"></script>
+
+   <!-- My Script -->
+   <script src="my/script.js"></script>
 
 </body>
 
