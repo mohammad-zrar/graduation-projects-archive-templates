@@ -125,6 +125,7 @@
         <div class="dataTable-top my-3">
           <div class="d-flex">
             <button type="submit" class="btn btn-primary mx-3 d-none d-md-block">Upload project</button>
+
             <button type="submit" class="btn btn-primary mx-3 d-block d-md-none">
               <i class="bi bi-plus-square"></i>
             </button>
@@ -134,7 +135,7 @@
                 <input type="text" class="form-control" aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg" placeholder="Search">
                 <button type="button" class="btn btn-outline-primary input-group-text" data-bs-toggle="modal"
-                      data-bs-target="#filterbutton">
+                  data-bs-target="#filterbutton">
                   Filter
                 </button>
               </div>
@@ -289,84 +290,94 @@
         </div>
       </div>
     </div>
+
+
   </main>
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-    
+
   <!-- MODALS -->
 
-  <!-- Delete Button Modal -->
-  <div class="modal fade" id="deletebutton" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Delete project</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Are you sure you want to delete “Smart Medical System” from the projects
-          list? you can't undo this.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Delete now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Filter Button Modal -->
-  <div class="modal fade" id="filterbutton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content w-75">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Filter</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <label class="col-sm-2 col-form-label">College</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected="">College of Science</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-
-            <label class="col-sm-2 col-form-label">Department</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected="">Computer Science</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-
-            <label for="inputNumber" class="col-sm-2 col-form-label">Year</label>
-            <div class="col-sm-10"> <input type="number" value="2023" class="form-control"></div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset all</button>
-          <button type="button" class="btn btn-primary">Apply now</button>
+    <!-- Delete Button Modal -->
+    <div class="modal fade" id="deletebutton" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Delete project</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to delete “Smart Medical System” from the projects
+            list? you can't undo this.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Delete now</button>
+          </div>
         </div>
       </div>
-    </div>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    </div> <!-- End Delete Button Modal -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Filter Button Modal -->
+    <div class="modal fade" id="filterbutton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content w-75">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Filter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="col-sm-2 col-form-label">College</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected="">College of Science</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
 
-  <!-- My Script -->
-  <script src="my/script.js"></script>
+              <label class="col-sm-2 col-form-label">Department</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected="">Computer Science</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <label for="inputNumber" class="col-sm-2 col-form-label">Year</label>
+              <div class="col-sm-10"> <input type="number" value="2023" max="2023" class="form-control"></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset all</button>
+            <button type="button" class="btn btn-primary">Apply now</button>
+          </div>
+        </div>
+      </div> <!-- End Filter Button Modal -->
+
+
+
+
+
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/chart.js/chart.umd.js"></script>
+      <script src="assets/vendor/echarts/echarts.min.js"></script>
+      <script src="assets/vendor/quill/quill.min.js"></script>
+      <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+      <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+      <!-- My Script -->
+      <script src="my/script.js"></script>
 
 </body>
 
