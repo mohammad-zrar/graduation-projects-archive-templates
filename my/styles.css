@@ -28,13 +28,5 @@
    width: 40px;
 }
 
-.ui-tooltip {
-  /* tooltip container box */
-  white-space: pre-line;
-}
 
-.ui-tooltip-content {
-  /* tooltip content */
-  white-space: pre-line;
-}
 
