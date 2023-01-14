@@ -32,4 +32,11 @@
 }
 
 
+/* Admins page */
+.pass-field {
+  width: 100px;
+}
 
+.per-select {
+  width: 180px;
+}
