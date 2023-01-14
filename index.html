@@ -126,13 +126,13 @@
           <div class="d-flex">
             <!-- Upload buttons with modal -->
             <button type="submit" class="btn btn-primary mx-3 d-none d-md-block" data-bs-toggle="modal"
-              data-bs-target="#uploadbtn" >
+              data-bs-target="#uploadbtn">
               Upload project
             </button>
 
             <button type="submit" class="btn btn-primary mx-3 d-block d-md-none" data-bs-toggle="modal"
               data-bs-target="#uploadbtn">
-              <i class="bi bi-plus-square"></i>
+              <i class="bi bi-upload"></i>
             </button>
 
             <div class="modal fade" id="uploadbtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -140,7 +140,7 @@
               <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Upload project</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <!-- content -->
@@ -148,11 +148,11 @@
                     <!-- First row -->
                     <div class="row">
                       <div class="col-md-4 col-sm-6"> <label for="Project-name" class="form-label">Project name</label>
-                        <input type="text" class="form-control" id="Project-name"
-                          placeholder="Type project name">
+                        <input type="text" class="form-control" id="Project-name" placeholder="Type project name">
                       </div>
 
-                      <div class="col-md-4 col-sm-6"> <label for="Students-name" class="form-label">Students name</label>
+                      <div class="col-md-4 col-sm-6"> <label for="Students-name" class="form-label">Students
+                          name</label>
                         <input type="text" class="form-control" id="Students-name" placeholder="Enter student name">
                       </div>
 
@@ -162,11 +162,11 @@
                     </div> <!-- End of First row -->
 
                     <!-- Second row -->
-                    <div class="row py-3"> 
+                    <div class="row py-3">
                       <div class="col-md-4 col-sm-6">
                         <label class="col-sm-2 col-form-label">College</label>
                         <select class="form-select" aria-label="Default select example">
-                        
+
                           <option selected="">Select College</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
@@ -192,14 +192,15 @@
                     <!-- Third row -->
                     <div class="row">
                       <div class="col-md-4 col-sm-6"> <label for="aws-cloud" class="form-label">AWS Cloud Doc</label>
-                        <input type="text" class="form-control" id="aws-cloud" placeholder="http://aws.cloud.co/mart...">
+                        <input type="text" class="form-control" id="aws-cloud"
+                          placeholder="http://aws.cloud.co/mart...">
                       </div>
-                    
-                      <div class="col-md-4 col-sm-6"> 
+
+                      <div class="col-md-4 col-sm-6">
                         <label for="formfile" class="form-label">Project name</label>
                         <input type="file" class="form-control" id="formFile">
                       </div>
-                    
+
                       <div class="col-md-4 col-sm-6"> <label for="Supervisor1" class="form-label">Supervisor</label>
                         <input type="text" class="form-control" id="Supervisor1" placeholder="Smart Medical System">
                       </div>
@@ -214,7 +215,7 @@
             </div><!-- End Upload buttons with modal -->
 
 
-            
+
 
             <div class="dataTable-search">
               <div class="input-group input-group-lg">
@@ -269,11 +270,13 @@
                   <td>Computer Science</td>
                   <td class="text-start d-flex py-3">
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none"
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       <i class="bi bi-info-circle"></i>
                     </button>
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline "
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       more info
                     </button>
 
@@ -282,7 +285,8 @@
                       <i class="bi bi-trash"></i>
                     </button>
 
-                    <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                    <button type="button" class="btn btn-warning btn-sm text-light mx-1" data-bs-toggle="modal"
+                      data-bs-target="#editbutton">
                       <i class="bi bi-pencil"></i>
                     </button>
                   </td>
@@ -303,11 +307,13 @@
                   <td>Computer Science</td>
                   <td class="text-start d-flex py-3">
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none"
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       <i class="bi bi-info-circle"></i>
                     </button>
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline "
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       more info
                     </button>
 
@@ -316,7 +322,8 @@
                       <i class="bi bi-trash"></i>
                     </button>
 
-                    <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                    <button type="button" class="btn btn-warning btn-sm text-light mx-1" data-bs-toggle="modal"
+                      data-bs-target="#editbutton">
                       <i class="bi bi-pencil"></i>
                     </button>
                   </td>
@@ -337,11 +344,13 @@
                   <td>Software engineering</td>
                   <td class="text-start d-flex py-3">
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-xl-none"
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       <i class="bi bi-info-circle"></i>
                     </button>
 
-                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline ">
+                    <button type="button" class="btn btn-success btn-sm text-light mx-1 d-none d-xl-inline "
+                      data-bs-toggle="modal" data-bs-target="#infobtn">
                       more info
                     </button>
 
@@ -350,12 +359,122 @@
                       <i class="bi bi-trash"></i>
                     </button>
 
-                    <button type="button" class="btn btn-warning btn-sm text-light mx-1">
+                    <button type="button" class="btn btn-warning btn-sm text-light mx-1" data-bs-toggle="modal"
+                      data-bs-target="#editbutton">
                       <i class="bi bi-pencil"></i>
                     </button>
                   </td>
                 </tr>
               </tbody>
+              <!-- Start info buttons Modal -->
+              <div class="modal fade" id="infobtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Upload project</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- content -->
+                    <div class="modal-body py-3">
+                      <!-- First row -->
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6"> <label for="Project-name" class="form-label">Project
+                            name</label>
+                          <input type="text" class="form-control" id="Project-name" placeholder="Type project name"
+                            disabled>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6"> <label for="Students-name" class="form-label">Students
+                            name</label>
+                          <input type="text" class="form-control" id="Students-name" placeholder="Enter student name"
+                            disabled>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6"> <label for="Supervisor" class="form-label">Supervisor</label>
+                          <input type="text" class="form-control" id="Supervisor" placeholder="Smart Medical System"
+                            disabled>
+                        </div>
+                      </div> <!-- End of First row -->
+
+                      <!-- Second row -->
+                      <div class="row py-3">
+                        <div class="col-md-4 col-sm-6">
+                          <label class="col-sm-2 col-form-label">College</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+
+                            <option selected="">Select College</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <label class="col-sm-2 col-form-label">Department</label>
+                          <select class="form-select" aria-label="Default select example" disabled>
+
+                            <option selected="">Select Dep</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <label for="inputNumber" class="col-sm-2 col-form-label">Year</label>
+                          <input type="number" value="2023" max="2023" class="form-control" disabled>
+                        </div>
+                      </div><!-- End First row -->
+
+                      <!-- Third row -->
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6"> <label for="aws-cloud" class="form-label">AWS Cloud Doc</label>
+                          <input type="text" class="form-control" id="aws-cloud"
+                            placeholder="http://aws.cloud.co/mart..." disabled>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                          <label for="formfile" class="form-label">Project name</label>
+                          <input type="file" class="form-control" id="formFile" disabled>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6"> <label for="Supervisor1" class="form-label">Supervisor</label>
+                          <input type="text" class="form-control" id="Supervisor1" placeholder="Smart Medical System"
+                            disabled>
+                        </div>
+                      </div> <!-- End of Third row -->
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End info buttons with modal -->
+
+              <!-- Edit button Modal -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="editbutton" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Edit button Modal -->
+
+
             </table>
           </div>
         </div>
@@ -446,7 +565,6 @@
         </div>
       </div>
     </div> <!-- End Filter Button Modal -->
-
 
 
 
