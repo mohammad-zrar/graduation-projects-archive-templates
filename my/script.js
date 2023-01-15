@@ -3,6 +3,7 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 
+/* Password Show button */
 const togglePassword = document
   .querySelector('#togglePassword');
 
@@ -21,3 +22,4 @@ togglePassword.addEventListener('click', () => {
   // Toggle the eye and bi-eye icon
   this.classList.toggle('bi-eye');
 });
+/* ------------------------------ */
