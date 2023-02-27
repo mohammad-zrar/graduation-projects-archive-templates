@@ -171,16 +171,6 @@
                       </div>
                     </div>
 
-
-                    <div class="mb-2">
-                      <label class="col-form-label">Serach By</label>
-                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected>Project Title</option>
-                        <option value="1">Supervisor Name</option>
-                        <option value="2">Student name</option>
-                      </select>
-                    </div>
-
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
@@ -192,12 +182,22 @@
           </div>
 
           <div class="col-auto">
-            <div class="input-group input-group-lg">
-              <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+            <div class="input-group input-group-lg input-group-sm">
+              <button type="button" class="btn btn-outline-warning px-3" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 <i class="bi bi-filter"></i>
               </button>
               <input type="text" class="form-control border-warning" placeholder="Search">
+              
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Project Title</option>
+                  <option value="1">Supervisor Name</option>
+                  <option value="2">Student Name</option>
+                </select>
+                <label for="floatingSelect">Search By</label>
+              </div>
+
               <button type="button" class="btn btn-warning text-light">
                 submit
               </button>
