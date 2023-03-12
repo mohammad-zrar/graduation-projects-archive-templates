@@ -1,25 +1,7 @@
-// This is for student names popover
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+const btn_menu = document.querySelector(".btn-menu");
+const side_bar = document.querySelector(".sidebar");
 
-
-/* Password Show button */
-const togglePassword = document
-  .querySelector('#togglePassword');
-
-const password = document.querySelector('#password');
-
-togglePassword.addEventListener('click', () => {
-
-  // Toggle the type attribute using
-  // getAttribure() method
-  const type = password
-    .getAttribute('type') === 'password' ?
-    'text' : 'password';
-
-  password.setAttribute('type', type);
-
-  // Toggle the eye and bi-eye icon
-  this.classList.toggle('bi-eye');
+btn_menu.addEventListener("click", function () {
+  side_bar.classList.toggle("expand");
+  changebtn();
 });
-/* ------------------------------ */
